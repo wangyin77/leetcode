@@ -31,6 +31,35 @@
 11. STL
 12. 字符串
 13. 链表
+- Leetcode中单链表的定义
+```c++
+Definition for singly-linked list.
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode(int x) : val(x), next(NULL) {}
+};
+```
+- 创建虚拟头节点`dummy`
+```c++
+ListNode *dummy = new ListNode(-1);
+dummy->next = head;
+
+return dummy->next;
+```
+- 反转节点,经常用到
+```c++
+ListNode* reverseList(ListNode* head) {
+    ListNode *prev = nullptr, *next;
+    while (head) {
+        next = head->next;
+        head->next = prev;
+        prev = head;
+        head = next;
+    }
+    return prev;
+}
+```
 14. 树
 15. 图
 16. 并查集
