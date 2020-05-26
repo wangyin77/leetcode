@@ -34,10 +34,10 @@
     - Leetcode中单链表的定义
     ```c++
     Definition for singly-linked list.
-    struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+        struct ListNode {
+        int val;
+        ListNode *next;
+        ListNode(int x) : val(x), next(NULL) {}
     };
     ```
     - 创建虚拟头节点`dummy`
@@ -59,10 +59,6 @@
         }
         return prev;
     }
-    ```
-    - 判断是否到结尾的另一种写法
-    ```c++
-    node->next = l1? l1: l2;
     ```
     - 各种特殊技巧
         1. 快慢指针判环，第二次相交为入口
