@@ -34,7 +34,7 @@
     - Leetcode中单链表的定义
     ```c++
     Definition for singly-linked list.
-        struct ListNode {
+    struct ListNode {
         int val;
         ListNode *next;
         ListNode(int x) : val(x), next(NULL) {}
