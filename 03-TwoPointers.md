@@ -65,6 +65,7 @@ public:
 ```
 > 题意：判断给定数是否是两个数的平方和  
 > 基本思路：两个指针分别从1和sqrt(target)向中间移动，大于target,右指针左移, 小于target,左指针右移
+> 注意：当c很大,接近int上限时，t容易超int范围，需要存成long long
 
 ## 680. Valid Palindrome II
 ```c++
